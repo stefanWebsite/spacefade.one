@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>ELG3125 MATLAB</title>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<h1 id="matlab-elg3125-cheatsheet">MATLAB ELG3125 cheatsheet</h1>
+<pre><code>• abs(x) absolute value 
+• exp(x) exponential 
+• sin(x),cos(x) sine, cosine 
+• log(x),log10(x) natural logarithm, common logarithm 
+• sqrt(x) square root 
+• sign(x) signum 
+• round(x),fix(x) round towards nearest integer, round towards zero 
+• floor(x),ceil(x) round towards negative infinity, round towards plus infinity 
+• size(x),length(x) size of array, length of vector</code></pre>
+<p>Use a <code>,</code> to separate two commands Example:</p>
+<pre><code>&gt;&gt; a=10, 5+10 % set var a to 10 then add 5 and 10
+a =
+    10
+ans =
+    15</code></pre>
+<p>Use <code>%</code> as the comment marker for the line</p>
+<p>Use <code>;</code> to suppress the output or separate lines in a matrix</p>
+<p>Use <code>:</code> as for a range sequence for for indexing arrays</p>
+<pre><code>&gt;&gt; 1:15  % generates numbers from 1 to 15
+ans =
+    1     2     3     4     5     6     7     8     9    10    11    12    13    14    15
+&gt;&gt; 4:15 % generates numbers from 4 to 15
+ans =
+    4     5     6     7     8     9    10    11    12    13    14    15</code></pre>
+<h2 id="command-in-matlab"><whos> command in Matlab</h2>
+<blockquote>
+<p>whos lists in alphabetical order the names, sizes, and types of all variables in the currently active workspace.</p>
+</blockquote>
+<pre><code>&gt;&gt; whos
+  Name      Size            Bytes  Class     Attributes
+    a         1x1                 8  double              
+  ans       1x1                 8  double              
+  b         2x4                64  double </code></pre>
+<p>In this example; there are 3 variables store: * a, a 1x1 matrix representing the number 10 * ans, a 1x1 matrix representing the number 15 * b, a 2*4 matrix</p>
+<p><code>clear</code> deletes the current workspace (clears all of the variables) <code>clc</code> clears the command window variables remain)</p>
+<h2 id="forming-a-matrix">Forming a matrix</h2>
+<p>To form a matrix, assign a variable that starts with an open square bracket, each index will be split by a space, and new lines are split with a <code>;</code></p>
+<p>Example of a 4x4 matrix that contains the following values</p>
+<pre><code>1 5 0 2
+5 4 6 6
+3 3 0 5 
+9 2 8 7</code></pre>
+<p>Inputing into Matlab:</p>
+<pre><code>&gt;&gt; a=[1 5 0 2;5 4 6 6;3 3 0 5;9 2 8 7]
+a =     1     5     0     2
+     5     4     6     6
+     3     3     0     5
+     9     2     8     7</code></pre>
+<p>Compatible matrix opperations: Use these commands as is for vector operations * <code>*</code> Multiplication * <code>/</code> division * <code>^</code> exponentiation To do element-by-element you must add a <code>.</code> before the operation listed above</p>
+<p>Example</p>
+<pre><code>&gt;&gt; a=[2 3;5 1], b=[4 7;9 6] % assign vars
+a =     2     3
+     5     1
+b =    4     7
+     9     6
+&gt;&gt; a*b % matrix multiplication ans =
+      35    32
+      29    41
+
+&gt;&gt; a.*b % dot product 
+ans =     8    21
+       45     6 </code></pre>
+<p>We can a single element k by using the following template</p>
+<p><code>matrix(k)</code> Example:</p>
+<pre><code>&gt;&gt; a(3)ans =     3</code></pre>
+<p>We can find multiple elements by using the following template <code>matrix(k:j)</code> Example:</p>
+<pre><code>&gt;&gt; a(2:4)ans =     5     3     1</code></pre>
+<p>We can also count the number of elements after a certain index to use and combine with other functions: <code>find(matrix&gt;k)</code></p>
+<p>Example:</p>
+<pre><code>
+     1     5     0     2
+     5     4     6     6
+     3     3     0     5
+     9     2     8     7
+
+&gt;&gt; find(a&gt;3)ans =      2
+     4
+     5
+     6
+    10
+    12
+    14
+    15
+    16</code></pre>
+<h2 id="plotting">Plotting</h2>
+<p>How to: * Set variables * plot variables using <code>plot()</code> command inserting variables into command and splitting with <code>,</code> example: <code>plot(x,y)</code> * use xlabel and ylabel to place labels on corresponding axis Example: <code>xlabel('here is the text that will appear on the graph')</code> * use title to title on the graph Example: <code>title('This is a graph title')</code></p>
+<p>Example:</p>
+<pre><code>x = 0:pi/10:6*pi; 
+y = cos(x); 
+plot(x,y);
+xlabel(&#39;x(radium)&#39;);
+ylabel(&#39;Sine of x&#39;);
+title(&#39;Plot of the Sine Function&#39;);</code></pre>
+<p><img src="markdown/65D95625-625B-4A20-837C-E79D7510C74A.png" /></p>
+<h2 id="subploting">Subploting</h2>
+<p>Using multiple graphs: read more about it here: <a href="https://www.mathworks.com/help/matlab/ref/subplot.html">mathworks.com - subplot</a> Using the base of the previous plot() command to get started then use the subplot command <code>subplot(&lt;number of y plots&gt;,&lt;number of x plots&gt;,&lt;index of current plot&gt;)</code></p>
+<p>Example from mathworks.com:</p>
+<pre><code>subplot(2,1,1);
+x = linspace(0,10);
+y1 = sin(x);
+plot(x,y1)
+
+subplot(2,1,2); 
+y2 = sin(5*x);
+plot(x,y2)</code></pre>
+<p>Output:</p>
+<p><img src="markdown/0519F0F7-F062-4D71-9476-958E8BBB5E99.png" /></p>
+<p>Plotting commands &gt; plot - Plot in linear coordinates as a continuous function<br />
+&gt; stem - Plot in linear coordinates as discrete samples<br />
+&gt; Loglog - Logarithmic x and y axes<br />
+&gt; Semilogx - Linear y and logarithmic x axes<br />
+&gt; semilogy - Linear x and logarithmic y axes<br />
+&gt; bar - Bar graph<br />
+&gt; hist - Histogram<br />
+&gt; polar - Polar coordinates</p>
+<p>Customizing Plots &gt; xlabel - Labels x-axis<br />
+&gt; ylabel - Labels y-axis<br />
+&gt; title - Puts a title on the plot<br />
+&gt; grid - Adds a grid to the plot<br />
+&gt; axis - Allows changing the x and y axes<br />
+&gt; figure - Create a figure for plotting<br />
+&gt; hold on - Allows multiple plots to be superimposed on the same axes<br />
+&gt; hold off - Release hold on current plot<br />
+&gt; close(n) - Close figure number n<br />
+&gt; subplot(a,b,c) - Create an a × b matrix of plots with c the current figure</p>
+<h1 id="loops">Loops</h1>
+<h2 id="for-loop">For loop</h2>
+<pre><code>for var=x:y,
+command
+end</code></pre>
+<p>Example:</p>
+<pre><code>&gt;&gt; for x=2;4
+x
+end
+
+ans = 4
+x = 2</code></pre>
+<h2 id="while-loop">While loop</h2>
+<pre><code>&gt;&gt; n = 10;&gt;&gt; while n &lt; 100n = n + 10end
+n = 20
+n = 30
+n = 40
+n =  50 
+n= 60n = 70n = 80n = 90</code></pre>
+</body>
+</html>
