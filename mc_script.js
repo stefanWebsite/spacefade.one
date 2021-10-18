@@ -8,8 +8,12 @@ $.getJSON(url, function(r) {
    return false;
  } 
 var pl = '';
- if(r.players.sample.length > 0 ){ pl = '<br>OP: '+r.players.sample[0].name;  } 
-  $('#rest').html(r.description.replace(/§(.+?)/gi, '')+'<br><b>Players Online:</b> '+r.players.online+pl);
- $('#favicon').attr('src', r.favicon);
+var playerList = ''
+if(r.players.sample.length > 0 ){
+   for(var player in (r.players.sample)){
+      playerList = playerList + r.players.sample[player].name + "<br>";
+   }
+}
+  $('#rest').html(r.description.replace(/§(.+?)/gi, '')+'<br><b>Server Version:</b> '+r.version.name+pl +'<br><b>Players Online:</b> '+r.players.online+pl+"<br>"+ playerList);
     
 });
