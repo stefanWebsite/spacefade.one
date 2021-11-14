@@ -23,7 +23,7 @@ header {
   color: white;
   text-align: center;
 }
-h1{
+#one {
   text-transform: uppercase;
   margin: 0;
   font-size: 3rem;
@@ -33,7 +33,7 @@ h2{
   font-size: 2rem;
 }
 
-p{
+#two{
     margin: 0;
     font-size: 1.2rem;
   }
