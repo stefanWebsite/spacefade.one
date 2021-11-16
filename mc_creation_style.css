@@ -31,6 +31,8 @@ header {
 }
 h2{
   font-size: 2rem;
+  max-width: 500px;
+    margin: 20px auto;
 }
 
 
@@ -47,13 +49,14 @@ main {
   height: 500px;
   align-items: center;
   text-align: center;
+ 
   }
 
-img{
+  img{
     width: 70%;
     margin:auto;
     height: auto;
-    
+    border: 5px solid black;
 }
 
 
