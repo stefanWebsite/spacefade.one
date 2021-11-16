@@ -10,9 +10,10 @@ header {
         rgba(0, 0, 0, 0.5),
         rgba(0, 0, 0, 0.5)
       ),
-      url(https://raw.githubusercontent.com/stefanWebsite/spacefade.one/main/asset/mc_cover.png);
+      url(https://raw.githubusercontent.com/Javantax/spacefade.one/main/mc%20player%20creation%20images/Cover%20at%20the%20start%20of%20mc%20creations.jpg);
     background-size: cover;
     height: 100vh;
+    
   }
 
 .title {
@@ -31,12 +32,11 @@ header {
 }
 h2{
   font-size: 2rem;
+  max-width: 500px;
+    margin: 20px auto;
 }
 
-#two{
-    margin: 0;
-    font-size: 1.2rem;
-  }
+
 
 main {
     max-width: 500px;
@@ -50,10 +50,11 @@ main {
   height: 500px;
   align-items: center;
   text-align: center;
+ 
   }
 
-img{
-    width: 70%;
+  img{
+    width: 75%;
     margin:auto;
     height: auto;
     
