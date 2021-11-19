@@ -13,6 +13,7 @@ header {
       url(https://raw.githubusercontent.com/Javantax/spacefade.one/main/mc%20player%20creation%20images/Cover%20at%20the%20start%20of%20mc%20creations.jpg);
     background-size: cover;
     height: 100vh;
+    margin: auto;
     
   }
 
@@ -56,7 +57,8 @@ main {
   img{
     width: 75%;
     margin:auto;
-    height: auto;
+    height: 480px;
+    width: 850px;
     
 }
 
