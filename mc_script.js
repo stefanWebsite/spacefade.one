@@ -1,5 +1,5 @@
 //based on a pen by @robinselmer
-var url = "https://api.minetools.eu/ping/ultra.spacefade.one/25565";
+var url = "https://api.minetools.eu/ping/mc.spacefade.one/25565";
  
 $.getJSON(url, function(r) {
     //data is the JSON string
